@@ -1,0 +1,98 @@
+
+
+
+.modal.hide {
+    display: none;
+}
+
+.modal {
+    margin: 0;
+
+    /* display: none; */
+    background: #fff;
+    width: 100%;
+    padding: 30px;
+    box-shadow: 0 0 90px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 0px;
+}
+
+.modal .close-btn {
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 2em;
+    cursor: pointer;
+    padding: 0.1em 0.5em 0.1em;
+}
+
+.close-btn:hover {
+    background-color: #e5edff;
+}
+
+.modal .close-btn:hover {
+    color: #3498db;
+
+}
+
+.modal .text {
+    font-size: 35px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.modal form {
+    margin-top: -20px;
+}
+
+.modal form .field {
+    height: 45px;
+    width: 100%;
+    margin: 40px 0;
+}
+
+.modal form .field label {
+    font-size: 18px;
+}
+
+
+.modal form .field input {
+    height: 100%;
+    width: 100%;
+    padding-left: 10px;
+    font-size: 17px;
+    border: 1px solid silver;
+}
+
+.modal form .field input:focus {
+    border-color: #3498db;
+    border-bottom-width: 2px;
+}
+
+
+
+.modal .btn.login-btn {
+    padding: 0.8em 0.8em;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #0058ff;
+    background-color: #e5edff;
+    width: 100%;
+    margin: 1em 0px 1em;
+}
+
+.modal .btn.login-btn:hover {
+    color: white;
+    background-color: #0058ff;
+}
+
+
+@media screen and (min-width: 650px) {
+
+   .modal {
+        margin: 4% 33%;
+        width: 42em;
+   }
+
+
+}

@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: white;
+}
+
+
+nav {
+    display: flex;
+    align-items: center;
+
+    padding: 1em;
+
+}
+
+nav>* {
+    font-size: 1rem;
+    margin-right: 2em;
+    text-align: center;
+}
+
+
+
+button {
+    border: none;
+    background: none;
+}
+
+.btn {
+    cursor: pointer;
+}
+
+h1 {
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+
+
+
+.logo {
+    width: 70px;
+    height: 55px;
+}
+
+.about {
+    text-decoration: none;
+    color: #6b7280;
+}
+
+.login {
+    color: #0058ff;
+}
+
+.hero-section {
+    padding: 1em;
+    background-position: center;
+    background-size: cover;
+    margin-top: 5%;
+}
+
+
+
+.hero-title-blue {
+    color: #0058ff;
+}
+
+.hero-desc {
+    color: #6b7280;
+    margin-bottom: 2em;
+}
+
+
+.hero-button {
+    padding: 1em 2em;
+    border-radius: 5px;
+    font-size: 1rem;
+
+}
+
+.started {
+    color: white;
+    background-color: #0058ff;
+    margin-bottom: 1em;
+}
+
+.leads {
+    color: #0058ff;
+    background-color: #e5edff;
+}
+
+.cta {
+
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-background {
+    width: 52%;
+    height: 571px;
+    object-fit: cover;
+    clip-path: polygon(15% 0, 100% 0%, 100% 100%, 0% 100%);
+    display: none;
+}
+
+
+
+@media screen and (min-width: 650px) {
+
+    .hero-background {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        display: none;
+    }
+
+    nav {
+        margin-left: 2%;
+    }
+
+
+    .hero-section {
+        /* background: none; */
+        width: 50%;
+        margin-left: 2%;
+
+    }
+
+
+}
+
+@media screen and (min-width: 700px) {
+    .hero-background {
+        width: 45%;
+        display: block;
+    }
+}
+
+@media screen and (min-width: 1500px) {
+
+
+    h1 {
+        font-size: 3rem;
+        line-height: 60px;
+    }
+
+
+    nav {
+        margin-left: 5%;
+    }
+
+    .hero-section {
+        margin-left: 5%;
+    }
+
+
+    .cta {
+        display: block;
+    }
+
+    .started {
+        margin-right: 1em;
+    }
+
+    .hero-background {
+        width: 52%;
+        display: block;
+    }
+
+    .hero-desc {
+        max-width: 700px;
+    }
+
+
+
+}
+
+@media screen and (min-width: 1880px) {
+
+
+    h1 {
+        font-size: 3.5rem;
+        max-width: 800px;
+    }
+
+
+    .hero-desc {
+        max-width: 700px;
+    }
+
+}
